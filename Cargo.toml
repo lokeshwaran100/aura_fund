@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/aura_fund_backend"
+]
+resolver = "2"

@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "aura_fund_backend": {
+      "candid": "src/aura_fund_backend/aura_fund_backend.did",
+      "package": "aura_fund_backend",
+      "type": "rust"
+    },
+    "aura_fund_frontend": {
+      "dependencies": [
+        "aura_fund_backend"
+      ],
+      "source": [
+        "src/aura_fund_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "aura_fund_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
